@@ -15773,17 +15773,18 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-header {
-  min-height: 100vh;
-}
-
 nav {
-  position: absolute;
-  z-index: 100;
+  background-color: black;
 }
 
 .li_nav {
+  color: #F2E3D5;
+  transition: 0.5s;
+}
+
+.li_nav:hover {
   color: #8C6C5A;
+  transition: 0.5s;
 }
 
 #main_logo {
@@ -15798,8 +15799,60 @@ canvas {
   font-size: 4rem;
 }
 
+#hr_cv {
+  background-color: #8C6C5A;
+  width: 10%;
+  margin: 0;
+}
+
+#div_cv {
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/bg_cv.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#div_cv h3 {
+  font-size: 1.8rem;
+}
+
+#div_cv p {
+  font-size: 1.2rem;
+}
+
+.i_cv {
+  color: #8C6C5A;
+  font-size: 2rem;
+}
+
+.hr_cv {
+  background-color: #8C6C5A;
+  width: 15%;
+  margin-left: 0;
+}
+
+#hr_cv2 {
+  background-color: #8C6C5A;
+  width: 7.5%;
+  margin-left: 0;
+}
+
+.bar_bg {
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.bar_color {
+  background-color: #BFA38A;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
+  background-color: #131414;
 }
 
 li {

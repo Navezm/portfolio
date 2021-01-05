@@ -1,0 +1,44 @@
+#hr_cv{
+    background-color: $color4;
+    width: 10%;
+    margin: 0;
+}
+
+#div_cv{
+    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/bg_cv.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    h3{
+        font-size: 1.8rem;
+    }
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+.i_cv{
+    color: $color4;
+    font-size: 2rem;
+}
+
+.hr_cv{
+    background-color: $color4;
+    width: 15%;
+    margin-left: 0;
+}
+
+#hr_cv2{
+    background-color: $color4;
+    width: 7.5%;
+    margin-left: 0;
+}
+
+.bar_bg{
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.bar_color{
+    background-color: $color1;
+}

@@ -1,18 +1,15 @@
-header{
-    min-height: 100vh;
-}
-
 nav{
-    position: absolute;
-    z-index: 100;
+    background-color: black;
 }
 
 .li_nav{
-    color: $color4;
+    color: $color3;
+    transition: 0.5s;
 }
 
 .li_nav:hover{
-    
+    color: $color4;
+    transition: 0.5s;
 }
 
 #main_logo{
