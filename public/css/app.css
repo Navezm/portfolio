@@ -15779,6 +15779,23 @@ header {
 
 nav {
   position: absolute;
+  z-index: 100;
+}
+
+.li_nav {
+  color: #8C6C5A;
+}
+
+#main_logo {
+  color: #BFA38A;
+}
+
+canvas {
+  background-color: black;
+}
+
+#span_header {
+  font-size: 4rem;
 }
 
 body {
@@ -15791,8 +15808,10 @@ li {
 
 a {
   all: unset;
+  cursor: pointer;
 }
 
 a:hover {
   all: unset;
+  cursor: pointer;
 }

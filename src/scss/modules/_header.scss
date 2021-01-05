@@ -4,4 +4,25 @@ header{
 
 nav{
     position: absolute;
+    z-index: 100;
+}
+
+.li_nav{
+    color: $color4;
+}
+
+.li_nav:hover{
+    
+}
+
+#main_logo{
+    color: $color1;
+}
+
+canvas{
+    background-color: rgb(0, 0, 0);
+}
+
+#span_header{
+    font-size: 4rem;
 }
