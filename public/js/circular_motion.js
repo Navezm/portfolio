@@ -63,8 +63,8 @@ class Particle{
         this.radians += this.velocity;
 
         // Drag effect
-        this.lastMouse.x += (mouse.x - this.lastMouse.x) * 0.05;
-        this.lastMouse.y += (mouse.y - this.lastMouse.y) * 0.05;
+        // this.lastMouse.x += (mouse.x - this.lastMouse.x) * 0.05;
+        // this.lastMouse.y += (mouse.y - this.lastMouse.y) * 0.05;
 
         // Circular motion
         this.x = this.lastMouse.x + Math.cos(this.radians) * this.distanceFromCenter.x;
