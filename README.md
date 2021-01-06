@@ -1,4 +1,4 @@
-# Portofolio
+# Portfolio
 
 Hello everyone, this is my current portfolio. 
 
