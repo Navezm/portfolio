@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "Hello everyone, this is my current portfolio.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,14 @@
     "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^4.5.3",
     "jquery": "^3.5.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Navezm/portfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Navezm/portfolio/issues"
+  },
+  "homepage": "https://github.com/Navezm/portfolio#readme"
 }
