@@ -1,0 +1,25 @@
+nav{
+    background-color: black;
+}
+
+.li_nav{
+    color: $color3;
+    transition: 0.5s;
+}
+
+.li_nav:hover{
+    color: $color4;
+    transition: 0.5s;
+}
+
+#main_logo{
+    color: $color1;
+}
+
+canvas{
+    background-color: rgb(0, 0, 0);
+}
+
+#span_header{
+    font-size: 4rem;
+}
