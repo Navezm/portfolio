@@ -16268,7 +16268,7 @@ canvas {
 }
 
 #div_cv {
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url(../img/bg_cv.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/bg_cv.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
