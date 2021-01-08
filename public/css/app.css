@@ -16308,6 +16308,33 @@ canvas {
   background-color: #BFA38A;
 }
 
+#hr_contact {
+  color: #8C6C5A;
+  width: 10%;
+  height: 2px;
+}
+
+.input_contact {
+  background: none;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  height: 4vh;
+}
+
+#input_contact {
+  background: none;
+  border: solid 1px rgba(255, 255, 255, 0.2);
+  height: 10vh;
+}
+
+.i_contact {
+  font-size: 2.5rem;
+  color: #8C6C5A;
+}
+
+.div_contact {
+  border-right: 1px solid #8C6C5A;
+}
+
 #hr_services {
   color: #8C6C5A;
   background-color: #8C6C5A;
