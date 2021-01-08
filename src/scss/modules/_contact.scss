@@ -1,0 +1,26 @@
+#hr_contact{
+    color: $color4;
+    width: 10%;
+    height: 2px;
+}
+
+.input_contact{
+    background: none;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    height: 4vh;
+}
+
+#input_contact{
+    background: none;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    height: 10vh;
+}
+
+.i_contact{
+    font-size: 2.5rem;
+    color: $color4;
+}
+
+.div_contact{
+    border-right: 1px solid $color4;
+}
