@@ -16261,6 +16261,11 @@ canvas {
   font-size: 4rem;
 }
 
+#footer {
+  background-color: black;
+  height: 12vh;
+}
+
 #hr_cv {
   background-color: #8C6C5A;
   width: 10%;
