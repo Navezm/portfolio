@@ -16235,6 +16235,16 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+@font-face {
+  font-family: font_light;
+  src: url(../fonts/JosefinSlab-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: font_normal;
+  src: url(../fonts/Quicksand-Light.ttf);
+}
+
 nav {
   background-color: black;
 }
@@ -16431,6 +16441,7 @@ html {
 body {
   margin: 0;
   background-color: #131414;
+  font-family: font_normal;
 }
 
 li {
