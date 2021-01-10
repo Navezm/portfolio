@@ -16308,6 +16308,21 @@ canvas {
   background-color: #BFA38A;
 }
 
+#hr_portfolio {
+  width: 15%;
+  height: 2px;
+  color: #8C6C5A;
+  background-color: #8C6C5A;
+}
+
+.list {
+  cursor: pointer;
+}
+
+.img_galerie {
+  width: 33%;
+}
+
 html {
   scroll-behavior: smooth;
 }
