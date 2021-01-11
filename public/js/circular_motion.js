@@ -32,7 +32,7 @@ window.addEventListener("mousemove", function(e){
 });
 
 window.addEventListener("resize", function(){
-    canvas.width = innerWidth - 15;
+    canvas.width = innerWidth;
     canvas.height = innerHeight;
 });
 

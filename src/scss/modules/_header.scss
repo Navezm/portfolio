@@ -23,3 +23,41 @@ canvas{
 #span_header{
     font-size: 4rem;
 }
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    canvas{
+        display: none;
+    }
+
+    #hellow{
+        position: static!important;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    header{
+        background-color: black;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px){
+    canvas{
+        display: none;
+    }
+
+    #hellow{
+        position: static!important;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    header{
+        background-color: black;
+    }
+
+    nav{
+        display: none!important;
+    }
+}

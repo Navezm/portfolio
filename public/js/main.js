@@ -1,11 +1,8 @@
-// Event Listener & animation Portfolio
+/*....................................................
+.........Event Listener portfolio...................*/
 
 let list = document.getElementsByClassName("list");
-let img = document.getElementsByClassName("img_galerie");
-
-$(document).ready(function () {
-
-})
+let img = document.getElementsByClassName("portfolio");
 
 list[0].addEventListener("click", function () {
     list[0].style.backgroundColor = "white";
@@ -22,8 +19,6 @@ list[0].addEventListener("click", function () {
         };
     };
 });
-
-
 
 list[1].addEventListener("click", function () {
     list[1].style.backgroundColor = "white";
@@ -88,9 +83,51 @@ list[3].addEventListener("click", function () {
     };
 });
 
-// Hover effect on images
-for (let i = 0; i < img.length; i++) {
-    img[e].addEventListener("mouseover", function () {
+/*....................................................
+................... Span Compteur...................*/
+const animationDuration = 2000;
 
+const frameDuration = 1000 / 60;
+
+const totalFrames = Math.round( animationDuration / frameDuration );
+
+const easeOutQuad = t => t * ( 2 - t );
+
+const animateCountUp = el => {
+	let frame = 0;
+	const countTo = parseInt( el.innerHTML, 10 );
+
+	const counter = setInterval( () => {
+		frame++;
+		
+		const progress = easeOutQuad( frame / totalFrames );
+		
+		const currentCount = Math.round( countTo * progress );
+
+		if ( parseInt( el.innerHTML, 10 ) !== currentCount ) {
+			el.innerHTML = currentCount;
+		}
+
+		if ( frame === totalFrames ) {
+			clearInterval( counter );
+		}
+	}, frameDuration );
+};
+
+let span_compt = document.querySelectorAll(".span_compteur");
+
+let runAnimations = () => {
+	span_compt.forEach(element => {
+        animateCountUp(element);
     });
 };
+
+let section_service = document.getElementById("section_service");
+
+// window.addEventListener("scroll", function(e){
+//     if(e.path[1].pageYOffset > 2180){
+//         runAnimations();
+//     };
+// });
+
+runAnimations();

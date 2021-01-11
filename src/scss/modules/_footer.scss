@@ -2,3 +2,23 @@
     background-color: black;
     height: 12vh;
 }
+
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    #footer{
+        div{
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px){
+    #footer{
+        div{
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
