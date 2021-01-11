@@ -16247,6 +16247,7 @@ readers do not read off random characters that represent icons */
 
 nav {
   background-color: black;
+  height: auto;
 }
 
 .li_nav {
@@ -16271,6 +16272,18 @@ canvas {
   font-size: 4rem;
 }
 
+.btn_nav {
+  color: #8C6C5A;
+  border: solid 1px #BFA38A;
+  border-radius: 5px;
+}
+
+.btn_nav:hover {
+  color: #8C6C5A;
+  border: solid 1px #BFA38A;
+  border-radius: 5px;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   canvas {
     display: none;
@@ -16283,6 +16296,7 @@ canvas {
   }
   header {
     background-color: black;
+    padding-top: 10%;
   }
 }
 
@@ -16298,8 +16312,12 @@ canvas {
   }
   header {
     background-color: black;
+    padding-top: 15%;
   }
-  nav {
+  #nav {
+    display: none !important;
+  }
+  #nav2 {
     display: none !important;
   }
 }
@@ -16470,7 +16488,6 @@ canvas {
 
 #hr_portfolio {
   width: 15%;
-  height: 2px;
   color: #8C6C5A;
   background-color: #8C6C5A;
 }
@@ -16664,4 +16681,10 @@ a:hover {
 
 .text-justify {
   text-align: justify;
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  html {
+    scroll-behavior: auto;
+  }
 }

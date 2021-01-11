@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="d-lg-flex d-sm-none justify-content-center w-100 sticky-top">
+    <nav id="nav" class="d-lg-flex d-sm-none justify-content-center w-100 sticky-top">
         <div class="row container mt-4">
             <!-- Nav gauche -->
             <div class="col-lg-6">
@@ -31,6 +31,60 @@
         </div>
     </nav>
     <!-- Navbar -->
+
+    <!-- Navbar Responsive -->
+    <nav id="nav2" class="d-lg-none fixed-top">
+        <div class="row m-0 p-2">
+            <!-- Nav gauche -->
+            <div class="text-center pb-2">
+                <a id="main_logo" href="#header">Navez Martin</a>
+            </div>
+            <!-- Nav gauche -->
+
+            <!-- Nav droite -->
+            <div class="text-center p-0">
+                <ul class="d-flex justify-content-around m-0 p-0">
+                    <li><a class="li_nav" href="#header">Home</a></li>
+                    <li><a class="li_nav" href="#section_about">About</a></li>
+                    <li><a class="li_nav" href="#section_services">Services</a></li>
+                    <li><a class="li_nav" href="#section_portfolio">Portfolio</a></li>
+                    <li><a class="li_nav" href="#section_testimonial">Testimonials</a></li>
+                    <li><a class="li_nav" href="#section_contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Nav droite -->
+        </div>
+    </nav>
+    <!-- Navbar Responsive -->
+
+    <!-- Navbar Phone -->
+    <nav class="d-lg-none d-md-none fixed-top">
+        <div class="row m-0 p-2">
+            <div class="text-start pb-2 col-6">
+                <a id="main_logo" href="#header">Navez Martin</a>
+            </div>
+            <div class="col-6 text-end">
+                <p>
+                    <a class="btn_nav py-1 px-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fas fa-angle-double-down"></i> 
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                     <div>
+                        <ul class="d-flex flex-column m-0 p-0">
+                            <li><a class="li_nav" href="#header">Home</a></li>
+                            <li><a class="li_nav" href="#section_about">About</a></li>
+                            <li><a class="li_nav" href="#section_services">Services</a></li>
+                            <li><a class="li_nav" href="#section_portfolio">Portfolio</a></li>
+                            <li><a class="li_nav" href="#section_testimonial">Testimonials</a></li>
+                            <li><a class="li_nav" href="#section_contact">Contact</a></li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Phone -->
 
     <!-- Header -->
     <header id="header">
@@ -79,7 +133,7 @@
                     </div>
     
                     <div>
-                        <button class="text-uppercase btn btn-outline-light">hire me</button>
+                        <button class="text-uppercase btn btn-outline-light" href="#section_contact">hire me</button>
                         <button class="text-uppercase btn btn-outline-light">download cv</button>
                     </div>
                 </div>
@@ -425,8 +479,8 @@
 
     <!-- Script Bootstrap & Jquery -->
     <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> 
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  -->
     <!-- Script perso -->
     <script src="./public/js/main.js"></script>
     <script src="./public/js/circular_motion.js"></script>

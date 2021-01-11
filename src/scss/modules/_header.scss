@@ -1,5 +1,6 @@
 nav{
     background-color: black;
+    height: auto;
 }
 
 .li_nav{
@@ -24,6 +25,18 @@ canvas{
     font-size: 4rem;
 }
 
+.btn_nav{
+    color: $color4;
+    border: solid 1px $color1;
+    border-radius: 5px;
+}
+
+.btn_nav:hover{
+    color: $color4;
+    border: solid 1px $color1;
+    border-radius: 5px;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1024px){
     canvas{
         display: none;
@@ -38,6 +51,7 @@ canvas{
 
     header{
         background-color: black;
+        padding-top: 10%;
     }
 }
 
@@ -55,9 +69,14 @@ canvas{
 
     header{
         background-color: black;
+        padding-top: 15%;
     }
 
-    nav{
+    #nav{
+        display: none!important;
+    }
+
+    #nav2{
         display: none!important;
     }
 }
