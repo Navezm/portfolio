@@ -8,7 +8,7 @@ canvas.width = innerWidth - 15;
 canvas.height = innerHeight;
 
 let mouse = {
-    x: innerWidth / 2,
+    x: canvas.width/4*3,
     y: innerHeight /2,
 };
 
@@ -26,7 +26,13 @@ span.style.top = innerHeight/3+"px";
 span.style.left = innerWidth/6+"px";
 
 // Basic event
-window.addEventListener("mousemove", function(e){
+// window.addEventListener("mousemove", function(e){
+//     mouse.x = e.clientX;
+//     mouse.y = e.clientY;
+// });
+
+window.addEventListener("click", function(e){
+    console.log(e.clientX);
     mouse.x = e.clientX;
     mouse.y = e.clientY;
 });
@@ -49,7 +55,7 @@ class Particle{
         this.radius = radius;
         this.color = color;
         this.radians = Math.random() * Math.PI*2;
-        this.velocity = 0.02;
+        this.velocity = 0.012;
         this.distanceFromCenter = {
             x: randomIntFromRange(100, 250),
             y: randomIntFromRange(100, 250)
@@ -63,8 +69,8 @@ class Particle{
         this.radians += this.velocity;
 
         // Drag effect
-        // this.lastMouse.x += (mouse.x - this.lastMouse.x) * 0.05;
-        // this.lastMouse.y += (mouse.y - this.lastMouse.y) * 0.05;
+        this.lastMouse.x += (mouse.x - this.lastMouse.x) * 0.05;
+        this.lastMouse.y += (mouse.y - this.lastMouse.y) * 0.05;
 
         // Circular motion
         this.x = this.lastMouse.x + Math.cos(this.radians) * this.distanceFromCenter.x;
@@ -86,7 +92,7 @@ class Particle{
 let particles;
 let init = () => {
     particles = [];
-    for (let i = 0; i < 250; i++) {
+    for (let i = 0; i < 425; i++) {
         let randomRadius = Math.random()*5;
         let randomColor = colorArray[Math.floor(Math.random()*colorArray.length)];
         particles.push(new Particle(canvas.width/4*3, canvas.height/2, randomRadius, randomColor));
