@@ -16411,10 +16411,18 @@ canvas {
   }
 }
 
+@media screen and (min-width: 320px) and (max-width: 599px) {
+  #hr_cv2 {
+    width: 15%;
+  }
+  #hr_cv {
+    width: 15%;
+  }
+}
+
 #hr_contact {
   color: #8C6C5A;
   width: 10%;
-  height: 2px;
 }
 
 .input_contact {
@@ -16581,6 +16589,9 @@ canvas {
   .div_compteur_P {
     margin-top: 5%;
   }
+  .div_service1 {
+    border: none;
+  }
 }
 
 #section_testimonial {
@@ -16594,7 +16605,6 @@ canvas {
 
 #hr_testi {
   width: 10%;
-  height: 2px;
   color: #8C6C5A;
 }
 
@@ -16621,6 +16631,9 @@ canvas {
 @media screen and (min-width: 320px) and (max-width: 599px) {
   .div_carrousel {
     height: 25vh;
+  }
+  .p_testi {
+    font-size: 15px !important;
   }
 }
 

@@ -9,7 +9,6 @@
 
 #hr_testi{
     width: 10%;
-    height: 2px;
     color: $color4;
 }
 
@@ -35,5 +34,9 @@
 @media screen and (min-width: 320px) and (max-width: 599px){
     .div_carrousel{
         height: 25vh;
+    }
+
+    .p_testi{
+        font-size: 15px!important;
     }
 }
