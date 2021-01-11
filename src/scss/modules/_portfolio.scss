@@ -59,6 +59,15 @@
     background-size: cover;
 }
 
+.div_overlay{
+    transition: .4s;
+}
+
+.div_overlay:hover{
+    background-color: $color3;
+    transition: .4s;
+}
+
 @media screen and (min-width: 600px) and (max-width: 1023px){
     .img_galerie{
         width: 45%;

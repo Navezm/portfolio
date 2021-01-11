@@ -16427,6 +16427,9 @@ canvas {
   #hr_cv2 {
     width: 15%;
   }
+  .img_about {
+    width: 75%;
+  }
 }
 
 @media screen and (min-width: 320px) and (max-width: 599px) {
@@ -16541,6 +16544,15 @@ canvas {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.div_overlay {
+  transition: .4s;
+}
+
+.div_overlay:hover {
+  background-color: #F2E3D5;
+  transition: .4s;
 }
 
 @media screen and (min-width: 600px) and (max-width: 1023px) {

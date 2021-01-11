@@ -131,3 +131,21 @@ let section_service = document.getElementById("section_service");
 // });
 
 runAnimations();
+
+/*....................................................
+................Overlay Portfolio...................*/
+let h3 = document.getElementsByClassName("h3_overlay");
+for (let i = 0; i < h3.length; i++) {
+    h3[i].style.display = "none";
+};
+
+let img_galerie = document.getElementsByClassName("img_galerie");
+
+for (let i = 0; i < img_galerie.length; i++) {
+    img_galerie[i].addEventListener("mouseover", function(){
+        h3[i].style.display = "block";
+    });
+    img_galerie[i].addEventListener("mouseout", function(){
+        h3[i].style.display = "none";
+    });
+};
