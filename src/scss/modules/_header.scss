@@ -1,5 +1,6 @@
 nav{
     background-color: black;
+    height: auto;
 }
 
 .li_nav{
@@ -22,4 +23,60 @@ canvas{
 
 #span_header{
     font-size: 4rem;
+}
+
+.btn_nav{
+    color: $color4;
+    border: solid 1px $color1;
+    border-radius: 5px;
+}
+
+.btn_nav:hover{
+    color: $color4;
+    border: solid 1px $color1;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px){
+    canvas{
+        display: none;
+    }
+
+    #hellow{
+        position: static!important;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    header{
+        background-color: black;
+        padding-top: 10%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px){
+    canvas{
+        display: none;
+    }
+
+    #hellow{
+        position: static!important;
+        text-align: center;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    header{
+        background-color: black;
+        padding-top: 15%;
+    }
+
+    #nav{
+        display: none!important;
+    }
+
+    #nav2{
+        display: none!important;
+    }
 }

@@ -1,7 +1,8 @@
 #hr_services{
     color: $color4;
     background-color: $color4;
-    height: 3px;
+    height: 1px;
+    width: 15%;
 }
 
 .i_services{
@@ -33,4 +34,20 @@
 
 .span_compteur{
     font-size: 2.5rem;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1023px){
+    .div_compteur_2{
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 599px){
+    .div_compteur_P{
+        margin-top: 5%;
+    }
+
+    .div_service1{
+        border: none;
+    }
 }

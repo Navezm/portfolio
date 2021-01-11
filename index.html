@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="d-flex justify-content-center w-100 sticky-top">
+    <nav id="nav" class="d-lg-flex d-sm-none justify-content-center w-100 sticky-top">
         <div class="row container mt-4">
             <!-- Nav gauche -->
             <div class="col-lg-6">
@@ -32,6 +32,60 @@
     </nav>
     <!-- Navbar -->
 
+    <!-- Navbar Responsive -->
+    <nav id="nav2" class="d-lg-none fixed-top">
+        <div class="row m-0 p-2">
+            <!-- Nav gauche -->
+            <div class="text-center pb-2">
+                <a id="main_logo" href="#header">Navez Martin</a>
+            </div>
+            <!-- Nav gauche -->
+
+            <!-- Nav droite -->
+            <div class="text-center p-0">
+                <ul class="d-flex justify-content-around m-0 p-0">
+                    <li><a class="li_nav" href="#header">Home</a></li>
+                    <li><a class="li_nav" href="#section_about">About</a></li>
+                    <li><a class="li_nav" href="#section_services">Services</a></li>
+                    <li><a class="li_nav" href="#section_portfolio">Portfolio</a></li>
+                    <li><a class="li_nav" href="#section_testimonial">Testimonials</a></li>
+                    <li><a class="li_nav" href="#section_contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Nav droite -->
+        </div>
+    </nav>
+    <!-- Navbar Responsive -->
+
+    <!-- Navbar Phone -->
+    <nav class="d-lg-none d-md-none fixed-top">
+        <div class="row m-0 p-2">
+            <div class="text-start pb-2 col-6">
+                <a id="main_logo" href="#header">Navez Martin</a>
+            </div>
+            <div class="col-6 text-end">
+                <p>
+                    <a class="btn_nav py-1 px-2" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fas fa-angle-double-down"></i> 
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                     <div>
+                        <ul class="d-flex flex-column m-0 p-0">
+                            <li><a class="li_nav" href="#header">Home</a></li>
+                            <li><a class="li_nav" href="#section_about">About</a></li>
+                            <li><a class="li_nav" href="#section_services">Services</a></li>
+                            <li><a class="li_nav" href="#section_portfolio">Portfolio</a></li>
+                            <li><a class="li_nav" href="#section_testimonial">Testimonials</a></li>
+                            <li><a class="li_nav" href="#section_contact">Contact</a></li>
+                        </ul>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Phone -->
+
     <!-- Header -->
     <header id="header">
         <!-- Hello text -->
@@ -53,10 +107,12 @@
     <section id="section_about">
         <!-- Div explanation -->
         <div class="d-flex justify-content-center">
-            <div class="container row my-5 py-5">
+            <div class="div_explanation container row my-lg-5 mt-sm-0 py-5">
                 <!-- Image -->
                 <div class="col-lg-5 col-sm-12 pe-lg-5">
-                    <img class="w-100" src="./public/img/image_personne.jpg" alt="">
+                    <div class="img_about">
+                        <img class="w-100" src="./public/img/martin.png" alt="">
+                    </div>
                 </div>
                 <!-- Image -->
     
@@ -70,15 +126,15 @@
                     <p class="text-white-50 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis veniam aut impedit minima possimus, omnis mollitia eligendi qui incidunt corrupti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, totam.</p>
     
                     <div class="my-5">
-                        <a href="" class="me-2 p-2 text-white border border-light"><i class="fab fa-facebook"></i></a>
-                        <a href="" class="me-2 p-2 text-white border border-light"><i class="fab fa-twitter"></i></a>
-                        <a href="" class="me-2 p-2 text-white border border-light"><i class="fab fa-github"></i></a>
-                        <a href="" class="me-2 p-2 text-white border border-light"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/martin.navez.73/" class="me-2 p-2 text-white border border-light a_about"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="me-2 p-2 text-white border border-light a_about"><i class="fab fa-twitter"></i></a>
+                        <a href="https://github.com/Navezm" class="me-2 p-2 text-white border border-light a_about"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/martin-navez-a68099110/" class="me-2 p-2 text-white border border-light a_about"><i class="fab fa-linkedin"></i></a>
                     </div>
     
                     <div>
-                        <button class="text-capitalize btn btn-outline-light">hire me</button>
-                        <button class="text-capitalize btn btn-outline-light">download cv</button>
+                        <button class="text-uppercase btn btn-outline-light" href="#section_contact">hire me</button>
+                        <button class="text-uppercase btn btn-outline-light">download cv</button>
                     </div>
                 </div>
                 <!-- Text -->
@@ -180,45 +236,47 @@
     <!-- Section about -->
 
     <!-- Section services -->
-    <section id="section_services">
+    <section id="section_services" class="pt-5">
         <!-- My Services -->
-        <div class="container my-5 py-5">
+        <div class="container py-5">
             <div class="row justify-content-center">
                 <h1 class="text-white text-center mb-3">My Services</h1>
-                <hr id="hr_services" class="w-25">
+                <hr id="hr_services">
             </div>
             <div>
-                <div class="row row-cols-lg-3">
+                <div class="row">
                     <!-- Rangée 1 -->
-                    <div class="col text-center my-4 px-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center my-4 px-4">
                         <i class="fas fa-laptop-code i_services"></i>
                         <h3 class="text-white my-3">Web Design</h3>
                         <p class="text-white-50 p_services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis maxime laboriosam repellendus? Veritatis, aut impedit voluptatem quidem repudiandae</p>
                     </div>
-                    <div class="col text-center my-4 px-4 div_service1">
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center my-4 px-4 div_service1">
                         <i class="fab fa-buffer i_services"></i>
                         <h3 class="text-white my-3">Development</h3>
                         <p class="text-white-50 p_services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis maxime laboriosam repellendus? Veritatis, aut impedit voluptatem quidem repudiandae</p>
                     </div>
-                    <div class="col text-center my-4 px-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center my-4 px-4">
                         <i class="fas fa-bullhorn i_services"></i>
                         <h3 class="text-white my-3">Branding</h3>
                         <p class="text-white-50 p_services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis maxime laboriosam repellendus? Veritatis, aut impedit voluptatem quidem repudiandae</p>
                     </div>
                     <!-- Rangée 1 -->
+                </div>
 
+                <div class="row mt-3">
                     <!-- Rangée 2 -->
-                    <div class="col text-center my-4 px-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center my-4 px-4">
                         <i class="fas fa-shield-alt i_services"></i>
                         <h3 class="text-white my-3">Clean Code</h3>
                         <p class="text-white-50 p_services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis maxime laboriosam repellendus? Veritatis, aut impedit voluptatem quidem repudiandae</p>
                     </div>
-                    <div class="col text-center my-4 px-4 div_service1">
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center my-4 px-4 div_service1">
                         <i class="fas fa-mobile-alt i_services"></i>
                         <h3 class="text-white my-3">Fully Responsive</h3>
                         <p class="text-white-50 p_services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis maxime laboriosam repellendus? Veritatis, aut impedit voluptatem quidem repudiandae</p>
                     </div>
-                    <div class="col text-center my-4 px-4">
+                    <div class="col-lg-4 col-md-4 col-sm-12 text-center my-4 px-4">
                         <i class="fas fa-cogs i_services"></i>
                         <h3 class="text-white my-3">Custom Support</h3>
                         <p class="text-white-50 p_services">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis maxime laboriosam repellendus? Veritatis, aut impedit voluptatem quidem repudiandae</p>
@@ -235,23 +293,23 @@
                 <div class="row justify-content-center text-center">
                     <div class="col-lg-3 col-sm-6 row">
                         <i class="far fa-smile i_compteur"></i>
-                        <span class="span_compteur text-white fw-lighter my-3">0</span>
-                        <p class="text-white-50 p_services">Happy Customers</p>
+                        <span class="span_compteur text-white fw-lighter my-3">50</span>
+                        <p class="text-white p_services">Happy Customers</p>
                     </div>
-                    <div class="col-lg-3 col-sm-6 row">
+                    <div class="col-lg-3 col-sm-6 row div_compteur_P">
                         <i class="fab fa-buffer i_compteur"></i>
-                        <span class="span_compteur text-white fw-lighter my-3">0</span>
-                        <p class="text-white-50 p_services">Projects Complated</p>
+                        <span class="span_compteur text-white fw-lighter my-3">64</span>
+                        <p class="text-white p_services">Projects Complated</p>
                     </div>
-                    <div class="col-lg-3 col-sm-6 row">
+                    <div class="col-lg-3 col-sm-6 row div_compteur_2 div_compteur_P">
                         <i class="fas fa-file-download i_compteur"></i>
-                        <span class="span_compteur text-white fw-lighter my-3">0</span>
-                        <p class="text-white-50 p_services">File Downloaded</p>
+                        <span class="span_compteur text-white fw-lighter my-3">540</span>
+                        <p class="text-white p_services">File Downloaded</p>
                     </div>
-                    <div class="col-lg-3 col-sm-6 row">
+                    <div class="col-lg-3 col-sm-6 row div_compteur_2 div_compteur_P">
                         <i class="fas fa-code i_compteur"></i>
-                        <span class="span_compteur text-white fw-lighter my-3">0</span>
-                        <p class="text-white-50 p_services">Lines Of Code</p>
+                        <span class="span_compteur text-white fw-lighter my-3">7430</span>
+                        <p class="text-white p_services">Lines Of Code</p>
                     </div>
                 </div>
             </div>
@@ -261,35 +319,71 @@
     <!-- Section services -->
 
     <!-- Section portfolio -->
-    <section style="height: 50vh;">
-        <h1 class="text-white text-center">Portfolio - Galerie</h1>
+    <section id="section_portfolio" class="pt-5">
+        <div class="container">
+            <div class="d-flex justify-content-center pt-5">
+                <h1 class="text-white">My Portfolio</h1>
+            </div>
+            <div class="d-flex justify-content-center mb-2">
+                <hr id="hr_portfolio">
+            </div>
+            <!-- Galerie -->
+            <div class="d-flex justify-content-center">
+                <!-- Btn Selector -->
+                <ul class="d-flex flex-wrap">
+                    <li class="list me-3 text-white border border-light rounded-3 px-3 py-2" data-filter="all">All</li>
+                    <li class="list me-3 text-white border border-light rounded-3 px-3 py-2" data-filter="game">Game</li>
+                    <li class="list me-3 text-white border border-light rounded-3 px-3 py-2" data-filter="website">Website</li>
+                    <li class="list me-3 text-white border border-light rounded-3 px-3 py-2" data-filter="programs">Programs</li>
+                </ul>
+                <!-- Btn Selector -->
+            </div>
+            <!-- Image -->
+            <div class="d-flex flex-wrap pb-5 justify-content-center">
+                <div id="img1" class="m-2 p-2 portfolio img_galerie programs"></div>
+                <div id="img2" class="m-2 p-2 portfolio img_galerie game"></div>
+                <div id="img3" class="m-2 p-2 portfolio img_galerie website"></div>
+                <div id="img4" class="m-2 p-2 portfolio img_galerie website"></div>
+                <div id="img5" class="m-2 p-2 portfolio img_galerie programs"></div>
+                <div id="img6" class="m-2 p-2 portfolio img_galerie website"></div>
+
+                <!-- <img class="p-2 img_galerie2 programs" src="./public/img/calculette.png" alt="">
+                <img class="p-2 img_galerie1 game" src="./public/img/game_screen.png" alt="">
+                <img class="p-2 img_galerie2 website" src="./public/img/hexa.png" alt="">
+                <img class="p-2 img_galerie2 website" src="./public/img/site_du_chef.png" alt="">
+                <img class="p-2 img_galerie1 programs" src="./public/img/style_selector.png" alt="">
+                <img class="p-2 img_galerie2 website" src="./public/img/wwf.png" alt=""> -->
+            </div>
+            <!-- Image -->
+            <!-- Galerie -->
+        </div>
     </section>
     <!-- Section portfolio -->
 
-    <!-- Section testimonial -->
-    <section id="section_testimonial">
-        <div class="container text-center text-white pb-3">
+    <!-- Section Testimonial -->
+    <section id="section_testimonial" class="py-5">
+        <div class="container-lg container-md text-center text-white pb-3 tesi_div">
             <div class="pt-5 text-center">
                 <i class="text-white fas fa-quote-right border rounded-circle p-3"></i>
-                <h4 class="fs-2 mt-3">Testimonials</h4>
+                <h1 class="fs-2 mt-3">Testimonials</h1>
                 <div class="d-flex justify-content-center mt-3">
                     <hr id="hr_testi" class="m-0">
                 </div>
             </div>
             <!-- Carrousel -->
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div id="div_testi" class="carousel-inner my-5 text-white-50">
-                    <div class="carousel-item active px-5 pt-2">
-                       <p class="px-5 fs-5 fst-italic">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex est aspernatur rerum voluptatem a quibusdam provident iure maiores vero dolor! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil cupiditate repellat ad sed quidem reprehenderit!"</p>
-                       <p class="px-5"><span class="text-white">Alex Smith | </span><span class="fs-6">Envato Author</span></p>
+            <div id="carouselExampleIndicators" class="carousel slide div_carrousel" data-bs-ride="carousel">
+                <div id="div_testi" class="carousel-inner py-2 text-white-50">
+                    <div class="carousel-item active px-lg-5 px-md-4 pt-2">
+                       <p class="px-lg-5 px-md-4 fs-5 fst-italic p_testi">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex est aspernatur rerum voluptatem a quibusdam provident iure maiores vero dolor! Lorem ipsum, dolor sit amet consectetur adipisicing elit."</p>
+                       <p class="px-lg-5 px-md-4 p_testi"><span class="text-white">Alex Smith | </span><span class="fs-6">Envato Author</span></p>
                     </div>
-                    <div class="carousel-item px-5 pt-2">
-                        <p class="px-5 fs-5 fst-italic">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex est aspernatur rerum voluptatem a quibusdam provident iure maiores vero dolor! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil cupiditate repellat ad sed quidem reprehenderit!"</p>
-                        <p class="px-5"><span class="text-white">Alex Smith | </span>Envato Author</p>
+                    <div class="carousel-item px-lg-5 px-md-4 pt-2">
+                        <p class="px-lg-5 px-md-4 fs-5 fst-italic p_testi">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex est aspernatur rerum voluptatem a quibusdam provident iure maiores vero dolor! Lorem ipsum, dolor sit amet consectetur adipisicing elit."</p>
+                        <p class="px-lg-5 px-md-4 p_testi"><span class="text-white">Alex Smith | </span>Envato Author</p>
                     </div>
-                    <div class="carousel-item px-5 pt-2">
-                        <p class="px-5 fs-5 fst-italic">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex est aspernatur rerum voluptatem a quibusdam provident iure maiores vero dolor! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil cupiditate repellat ad sed quidem reprehenderit!"</p>
-                        <p class="px-5"><span class="text-white">Alex Smith | </span>Envato Author</p>
+                    <div class="carousel-item px-lg-5 px-md-4 pt-2">
+                        <p class="px-lg-5 px-md-4 fs-5 fst-italic p_testi">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex est aspernatur rerum voluptatem a quibusdam provident iure maiores vero dolor! Lorem ipsum, dolor sit amet consectetur adipisicing elit."</p>
+                        <p class="px-lg-5 px-md-4 p_testi"><span class="text-white">Alex Smith | </span>Envato Author</p>
                     </div>
                 </div>
                 <ol id="ol_carrousel" class="carousel-indicators">
@@ -301,13 +395,13 @@
             <!-- Carrousel -->
         </div>
     </section>
-    <!-- Section testimonial -->
+    <!-- Section Testimonial -->
 
     <!-- Section contact -->
     <section id="section_contact">
         <div class="container py-5">
             <div class="text-center">
-                <h3 class="text-white">Get In Touch</h3>
+                <h1 class="text-white">Get In Touch</h1>
                 <div class="d-flex justify-content-center">
                     <hr id="hr_contact" class="mb-5">
                 </div>
@@ -318,7 +412,7 @@
                     <div class="col-lg-6 col-sm-12">
                         <input class="w-100 rounded input_contact text-white" type="text" name="name" id="" placeholder=" Name *">
                     </div>
-                    <div class="col-lg-6 col-sm-12">
+                    <div class="col-lg-6 col-sm-12 div_form">
                         <input class="w-100 rounded input_contact text-white" type="email" name="" id="" placeholder=" Email *">
                     </div>
                 </div>
@@ -335,19 +429,19 @@
             <!-- Infos -->
             <div class="row">
                 <!-- Phone -->
-                <div class="col-lg-4 col-sm-12 row">
+                <div class="col-lg-4 col-sm-12 row div_info">
                     <div class="col-3 div_contact d-flex justify-content-center align-items-center p-0">
                         <i class="i_contact fas fa-phone-alt"></i>
                     </div>
                     <div class="col-9 p-0 ps-4">
                         <p class="text-white">Phone</p>
-                        <span class="text-white-50">+32 478 92 89 82</span>
+                        <span class="text-white-50">+32 478 52 47 95</span>
                     </div>
                 </div>
                 <!-- Phone -->
 
                 <!-- Email -->
-                <div class="col-lg-4 col-sm-12 row">
+                <div class="col-lg-4 col-sm-12 row div_info">
                     <div class="col-3 div_contact d-flex justify-content-center align-items-center p-0">
                         <i class="i_contact far fa-envelope"></i>
                     </div>
@@ -359,13 +453,13 @@
                 <!-- Email -->
 
                 <!-- Address -->
-                <div class="col-lg-4 col-sm-12 row">
+                <div class="col-lg-4 col-sm-12 row div_info">
                     <div class="col-3 div_contact d-flex justify-content-center align-items-center p-0">
                         <i class="i_contact fas fa-map-marker-alt"></i>
                     </div>
                     <div class="col-9 p-0 ps-4">
                         <p class="text-white">Address</p>
-                        <span class="text-white-50">Rue de Haerne 105, 1040 Etterbeek</span>
+                        <span class="text-white-50">Rue des Palais 44, 1030 Schaerbeek</span>
                     </div>
                 </div>
                 <!-- Address -->
@@ -385,8 +479,8 @@
 
     <!-- Script Bootstrap & Jquery -->
     <script src="./node_modules/jquery/dist/jquery.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script> 
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>  -->
     <!-- Script perso -->
     <script src="./public/js/main.js"></script>
     <script src="./public/js/circular_motion.js"></script>
