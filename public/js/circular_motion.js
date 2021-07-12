@@ -4,8 +4,8 @@ let header = document.querySelector("header");
 let canvas = document.querySelector("canvas");
 let ctx = canvas.getContext("2d");
 
-canvas.width = innerWidth - 15;
-canvas.height = innerHeight;
+canvas.width = window.innerWidth - 20;
+canvas.height = window.innerHeight;
 
 let mouse = {
     x: canvas.width/4*3,
